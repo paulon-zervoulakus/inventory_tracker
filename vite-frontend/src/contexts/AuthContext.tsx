@@ -1,6 +1,7 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { User, AuthContextType } from '../types/auth';
+import { createContext, useContext, useState, useEffect} from 'react';
 import { apiClient } from '../services/apiClient';
+import type { ReactNode } from 'react';
+import type { User, AuthContextType }  from '../types/auth';
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
@@ -61,7 +62,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
   };
 
   const login = () => {
-    window.location.href = `${process.env.REACT_APP_API_URL || 'http://localhost:8000'}/auth/google`;
+    window.location.href = `${'http://localhost:8000'}/auth/google`;
   };
 
   const logout = async () => {

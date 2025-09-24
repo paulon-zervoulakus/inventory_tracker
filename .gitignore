@@ -1,27 +1,32 @@
 # frontend dependencies
-/frontend/node_modules
-/frontend/.pnp
-/frontend.pnp.js
+# Logs
+/vite-frontend/logs
+/vite-frontend/*.log
+/vite-frontend/npm-debug.log*
+/vite-frontend/yarn-debug.log*
+/vite-frontend/yarn-error.log*
+/vite-frontend/pnpm-debug.log*
+/vite-frontend/lerna-debug.log*
 
-# testing
-/frontend/coverage
+/vite-frontend/node_modules
+/vite-frontend/dist
+/vite-frontend/dist-ssr
+/vite-frontend/*.local
 
-# production
-/frontend/build
+# Editor directories and files
+/vite-frontend/.vscode/*
+/vite-frontend/!.vscode/extensions.json
+/vite-frontend/.idea
+/vite-frontend/.DS_Store
+/vite-frontend/*.suo
+/vite-frontend/*.ntvs*
+/vite-frontend/*.njsproj
+/vite-frontend/*.sln
+/vite-frontend/*.sw?
 
-# misc
-/frontend/.DS_Store
-/frontend/.env.local
-/frontend/.env.development.local
-/frontend/.env.test.local
-/frontend/.env.production.local
-
-/frontend/npm-debug.log*
-/frontend/yarn-debug.log*
-/frontend/yarn-error.log*
 
 # api dependencies
-*.log
+/api/*.log
 /api/.DS_Store
 /api/.env
 /api/.env.backup
